@@ -236,7 +236,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libTEECommon \
-    libaedv \
     libapusys \
     libbwc \
     libconnfem \
@@ -249,7 +248,6 @@ PRODUCT_PACKAGES += \
     libimsg_log \
     libion_mtk \
     libion_ulit \
-    libladder \
     libmtcloader \
     libmtkcutils \
     libmtkperf_client_vendor \
