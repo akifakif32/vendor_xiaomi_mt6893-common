@@ -4727,6 +4727,7 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libhidlbase",
                 "libhwbinder",
+                "libged",
                 "libcodec2_soft_common-v31",
                 "libcutils",
                 "liblog",
@@ -4775,6 +4776,7 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libhidlbase",
                 "libhwbinder",
+                "libged",
                 "libcodec2_soft_common-v31",
                 "libcutils",
                 "liblog",
@@ -9643,6 +9645,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libbase_shim",
+                "libstagefright_foundation-v33",
                 "libbase",
                 "liblog",
                 "libcodec2",
