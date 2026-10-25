@@ -307,8 +307,6 @@ PRODUCT_PACKAGES += \
     libvow_ap_test_nn \
     libvpud_vcodec \
     vendor.mediatek.hardware.audio@7.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     APUWareApusysServer \
     APUWareHmpServer \
     APUWareUtilsServer \
