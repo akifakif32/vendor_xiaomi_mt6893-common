@@ -242,8 +242,6 @@ PRODUCT_PACKAGES += \
     libgz_gp_client \
     libgz_uree \
     libimsg_log \
-    libion_mtk \
-    libion_ulit \
     libmtcloader \
     libmtkcutils \
     libmtkproperty \
@@ -386,7 +384,7 @@ PRODUCT_PACKAGES += \
     libdlbdsservice \
     libdre \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libgamehdr \
     libged \
     libgf_ca \
@@ -415,6 +413,7 @@ PRODUCT_PACKAGES += \
     libmmagent \
     libmml \
     libmnetlink_v104 \
+    libmnl_mtk \
     libmp3dec_mtk \
     libmt_isee \
     libmt_isee@1.2 \
@@ -471,7 +470,6 @@ PRODUCT_PACKAGES += \
     libDR \
     libaiselector \
     libdpframework \
-    libmnl \
     libneuron_platform.vpu \
     libneuron_runtime.5 \
     libneuron_runtime \
@@ -493,9 +491,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.4 \
     vendor.mediatek.hardware.mms@1.5 \
     vendor.mediatek.hardware.mms@1.6 \
-    vendor.mediatek.hardware.mtkradioex@2.0 \
-    vendor.mediatek.hardware.mtkradioex@3.0 \
-    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.pq@2.0 \
     vendor.mediatek.hardware.pq@2.1 \
@@ -579,7 +574,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libDR_so \
     vendor_lib64_libaiselector_so \
     vendor_lib64_libdpframework_so \
-    vendor_lib64_libmnl_so \
     vendor_lib64_libmtk_drvb_so \
     vendor_lib64_libneuron_platform_vpu_so \
     vendor_lib64_libneuron_runtime_5_so \
