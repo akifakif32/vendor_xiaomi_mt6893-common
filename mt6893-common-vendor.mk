@@ -242,6 +242,8 @@ PRODUCT_PACKAGES += \
     libgz_gp_client \
     libgz_uree \
     libimsg_log \
+    libion_mtk \
+    libion_ulit \
     libmtcloader \
     libmtkcutils \
     libmtkproperty \
