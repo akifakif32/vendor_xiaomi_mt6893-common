@@ -684,6 +684,59 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libnotifyaudiohal",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libnotifyaudiohal.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder",
+                "liblog",
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "libxml2",
+                "android.hardware.audio@7.0",
+                "android.hardware.audio.common@7.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libnotifyaudiohal.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder",
+                "liblog",
+                "libhidlbase",
+                "libutils",
+                "libcutils",
+                "libxml2",
+                "android.hardware.audio@7.0",
+                "android.hardware.audio.common@7.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libnvram",
     owner: "xiaomi",
     strip: {
@@ -3517,6 +3570,38 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     relative_install_path: "hw/mt6893",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "sensors.elliptic",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/sensors.elliptic.so",
+            ],
+            shared_libs: [
+                "android.hardware.sensors@2.0",
+                "android.hardware.sensors@2.0-ScopedWakelock",
+                "libhidlbase",
+                "libbase",
+                "liblog",
+                "libutils",
+                "libnotifyaudiohal",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
 }
