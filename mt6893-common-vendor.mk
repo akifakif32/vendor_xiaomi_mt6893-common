@@ -143,6 +143,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/init.thermalloadalgod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermalloadalgod.rc \
+    vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/miteelog.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/miteelog.rc \
@@ -267,6 +268,7 @@ PRODUCT_PACKAGES += \
     vendor.dolby.hardware.dms@2.0 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
+    vendor.mediatek.hardware.videotelephony@1.0_vendor \
     AV1SecureVdecCA \
     AVCSecureVdecCA \
     HEVCSecureVdecCA \
@@ -338,6 +340,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.pq@2.13-impl \
+    vendor.mediatek.hardware.videotelephony@1.0-impl \
     libDefaultFpsActor \
     libFrameRecord \
     libJpgEncPipe \
@@ -545,6 +548,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.microtrust.hardware.soter@1.0-service \
     vendor.microtrust.hardware.thh@2.0-service \
+    vtservice_hidl \
     miteelog \
     mlipayd_isee@1.1 \
     mlipayd_mitee@1.1 \
