@@ -2994,6 +2994,51 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libGLESr32p1",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libGLESr32p1.so",
+            ],
+            shared_libs: [
+                "libnativewindow",
+                "libutils",
+                "liblog",
+                "libdmabufheap",
+                "libion_mtk",
+                "libion",
+                "libged",
+                "libgpu_aux",
+                "libgpud_stock",
+                "libgralloc_extra",
+                "libladder",
+                "libgralloc_metadata",
+                "libgralloctypes_mtk",
+                "libcutils",
+                "libz",
+                "arm.graphics-V1-ndk_platform",
+                "android.hardware.graphics.mapper@4.0",
+                "libgralloctypes",
+                "libhidlbase",
+                "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libMEOW_data",
     owner: "xiaomi",
     strip: {
@@ -3122,26 +3167,30 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/egl/mt6893/libGLES_mali.so",
             ],
             shared_libs: [
+                "libgpud_shim",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libbinder_ndk",
+                "liblog",
+                "libutilscallstack",
+                "libbase",
                 "libnativewindow",
                 "libutils",
-                "liblog",
-                "libdmabufheap",
-                "libion_mtk",
+                "android.hardware.graphics.mapper@4.0",
+                "libgralloctypes",
+                "libhidlbase",
+                "libgpu_aux",
                 "libion",
                 "libged",
-                "libgpu_aux",
                 "libgpud",
                 "libgralloc_extra",
                 "libladder",
                 "libgralloc_metadata",
                 "libgralloctypes_mtk",
                 "libcutils",
-                "libz",
-                "arm.graphics-V1-ndk_platform",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloctypes",
-                "libhidlbase",
                 "libhardware",
+                "android.hardware.graphics.common-V7-ndk",
+                "libdmabufheap",
+                "libz",
                 "libc++",
                 "libc",
                 "libm",
@@ -5524,6 +5573,42 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libgpud.so",
             ],
             shared_libs: [
+                "android.hardware.graphics.common-V7-ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libcutils",
+                "libutils",
+                "libutilscallstack",
+                "liblog",
+                "libsync",
+                "libhardware",
+                "libnativewindow",
+                "libgralloc_extra",
+                "libhidlbase",
+                "libgralloctypes",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgpud_stock",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgpud_stock.so",
+            ],
+            shared_libs: [
                 "libcutils",
                 "libutils",
                 "liblog",
@@ -7741,6 +7826,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "arm.graphics-V5-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6893/arm.graphics-V5-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6893",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "arm.graphics-ndk_platform",
     owner: "xiaomi",
     strip: {
@@ -7806,6 +7917,84 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libpq_prot",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6893",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarm_egl_properties_sysprop",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6893/libarm_egl_properties_sysprop.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6893",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarm_gralloc_properties_sysprop",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6893/libarm_gralloc_properties_sysprop.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6893",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libarm_mali_config_sysprops",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6893/libarm_mali_config_sysprops.so",
+            ],
+            shared_libs: [
                 "liblog",
                 "libc++",
                 "libc",
@@ -10559,6 +10748,13 @@ install_symlink {
 }
 
 install_symlink {
+    name: "vendor_lib64_arm_graphics-V5-ndk_so",
+    soc_specific: true,
+    installed_location: "lib64/arm.graphics-V5-ndk.so",
+    symlink_target: "/vendor/lib64/mt6893/arm.graphics-V5-ndk.so",
+}
+
+install_symlink {
     name: "vendor_lib64_arm_graphics-ndk_platform_so",
     soc_specific: true,
     installed_location: "lib64/arm.graphics-ndk_platform.so",
@@ -10577,6 +10773,27 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libaiselector.so",
     symlink_target: "/vendor/lib64/mt6893/libaiselector.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libarm_egl_properties_sysprop_so",
+    soc_specific: true,
+    installed_location: "lib64/libarm_egl_properties_sysprop.so",
+    symlink_target: "/vendor/lib64/mt6893/libarm_egl_properties_sysprop.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libarm_gralloc_properties_sysprop_so",
+    soc_specific: true,
+    installed_location: "lib64/libarm_gralloc_properties_sysprop.so",
+    symlink_target: "/vendor/lib64/mt6893/libarm_gralloc_properties_sysprop.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libarm_mali_config_sysprops_so",
+    soc_specific: true,
+    installed_location: "lib64/libarm_mali_config_sysprops.so",
+    symlink_target: "/vendor/lib64/mt6893/libarm_mali_config_sysprops.so",
 }
 
 install_symlink {
