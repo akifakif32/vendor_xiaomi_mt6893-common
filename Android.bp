@@ -2994,51 +2994,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libGLESr32p1",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/egl/libGLESr32p1.so",
-            ],
-            shared_libs: [
-                "libnativewindow",
-                "libutils",
-                "liblog",
-                "libdmabufheap",
-                "libion_mtk",
-                "libion",
-                "libged",
-                "libgpu_aux",
-                "libgpud_stock",
-                "libgralloc_extra",
-                "libladder",
-                "libgralloc_metadata",
-                "libgralloctypes_mtk",
-                "libcutils",
-                "libz",
-                "arm.graphics-V1-ndk_platform",
-                "android.hardware.graphics.mapper@4.0",
-                "libgralloctypes",
-                "libhidlbase",
-                "libhardware",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "egl",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libMEOW_data",
     owner: "xiaomi",
     strip: {
@@ -4013,7 +3968,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libOpenCL",
+    name: "libOpenCL_real",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -4021,7 +3976,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libOpenCL.so",
+                "proprietary/vendor/lib64/libOpenCL_real.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -5585,45 +5540,6 @@ cc_prebuilt_library_shared {
                 "libgralloc_extra",
                 "libhidlbase",
                 "libgralloctypes",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgpud_stock",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgpud_stock.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libsync",
-                "libhardware",
-                "libnativewindow",
-                "libgralloc_extra",
-                "libhidlbase",
-                "libgralloctypes",
-                "android.hardware.graphics.common@1.1",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
                 "libc++",
                 "libc",
                 "libm",

@@ -323,7 +323,6 @@ PRODUCT_PACKAGES += \
     APUWareUtilsServer \
     APUWareXrpServer_v2 \
     libGLES_meow \
-    libGLESr32p1 \
     libMEOW_data \
     libMEOW_gift \
     libMEOW_qt \
@@ -352,7 +351,7 @@ PRODUCT_PACKAGES += \
     libFrameRecord \
     libJpgEncPipe \
     libNoFpsActor \
-    libOpenCL \
+    libOpenCL_real \
     libaal_cust \
     libaal_key \
     libaal_mtk \
@@ -403,7 +402,6 @@ PRODUCT_PACKAGES += \
     libgoodixhwfingerprint \
     libgpu_aux \
     libgpud \
-    libgpud_stock \
     libgralloc_extra \
     libgralloc_metadata \
     libgralloctypes_mtk \
